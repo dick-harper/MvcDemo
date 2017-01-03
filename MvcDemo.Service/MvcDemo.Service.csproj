@@ -40,7 +40,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IEntityService.cs" />
+    <Compile Include="IService.cs" />
+    <Compile Include="IUserService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MvcDemo.Domain\MvcDemo.Domain.csproj">
+      <Project>{E7530137-EFAD-48F0-9947-EDB0613D4489}</Project>
+      <Name>MvcDemo.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MvcDemo.Repository\MvcDemo.Repository.csproj">
+      <Project>{C5B184A4-3ED7-40B4-935D-34A8BBCA3377}</Project>
+      <Name>MvcDemo.Repository</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

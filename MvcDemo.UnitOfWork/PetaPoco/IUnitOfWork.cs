@@ -1,11 +1,11 @@
 ﻿using System;
 using PetaPoco;
 
-namespace MvcDemo.Repository.UOW
+namespace MvcDemo.UnitOfWork.PetaPoco
 {
     public interface IUnitOfWork : IDisposable
     {
-        void Commit();
+        void Commit(); // Complete
 
         Database db { get; }
     }

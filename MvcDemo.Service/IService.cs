@@ -1,6 +1,8 @@
-﻿namespace MvcDemo.Service
+﻿using System;
+
+namespace MvcDemo.Service
 {
-    public interface IService
+    public interface IService: IDisposable
     {
     }
 }

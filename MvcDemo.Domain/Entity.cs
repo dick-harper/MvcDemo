@@ -4,8 +4,8 @@
     {
     }
 
-    public abstract class Entity<T> //: BaseEntity, IEntity<T>
+    public abstract class Entity : IEntity
     {
-        public virtual T Id { get; set; }
+        public int Id { get; set; }
     }
 }

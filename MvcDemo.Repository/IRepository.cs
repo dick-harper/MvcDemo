@@ -1,10 +1,12 @@
 ﻿using MvcDemo.Domain;
-using MvcDemo.Repository.UOW;
+using MvcDemo.UnitOfWork.PetaPoco;
 
 namespace MvcDemo.Repository
 {
-    public interface IRepository<T> //where T : IEntity<User>
+    public interface IRepository<TEntity> where TEntity : IEntity
     {
-        T Save(IUnitOfWork uow, T entity);
+        void Add(IUnitOfWork uow, TEntity entity);
+
+        TEntity Get(IUnitOfWork uow, int id);
     }
 }

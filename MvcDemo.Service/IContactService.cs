@@ -2,7 +2,7 @@
 
 namespace MvcDemo.Service
 {
-    public interface IUserService : IEntityService<User>
+    public interface IContactService : IEntityService<Contact>
     {
     }
 }

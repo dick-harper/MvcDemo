@@ -1,27 +1,13 @@
 ﻿using MvcDemo.Domain;
 using MvcDemo.Repository;
-using MvcDemo.Repository.UOW;
-using MvcDemo.Repository.UOW.PetaPoco;
+using MvcDemo.UnitOfWork.PetaPoco;
 
 namespace MvcDemo.Service
 {
-    public class UserService : IUserService 
+    public class UserService : EntityService<User>, IUserService
     {
-        private readonly IUserRepository _repository;
-        
-        public UserService(IUserRepository repository)
+        public UserService( IUnitOfWork uow, IRepository<User> repository) : base(uow, repository)
         {
-            _repository = repository;
-        }
-
-        public User Save(User user)
-        {
-            using (IUnitOfWork uow = new PetaPocoUnitOfWork())
-            {
-                //return _repository.Save(uow, user);
-            }
-
-            return null;
         }
     }
 }

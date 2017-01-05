@@ -1,10 +1,9 @@
-﻿using MvcDemo.Domain;
-using MvcDemo.Repository.UOW;
+﻿using System.Runtime.InteropServices.ComTypes;
+using MvcDemo.Domain;
 
 namespace MvcDemo.Repository
 {
-    public interface IUserRepository
+    public interface IUserRepository : IRepository<User>
     {
-        User Save(IUnitOfWork uow, User user);
     }
 }

@@ -1,6 +1,6 @@
 ﻿using PetaPoco;
 
-namespace MvcDemo.Repository.UOW.PetaPoco
+namespace MvcDemo.UnitOfWork.PetaPoco
 {
     public class PetaPocoUnitOfWork : IUnitOfWork
     {
@@ -10,7 +10,7 @@ namespace MvcDemo.Repository.UOW.PetaPoco
 
         public PetaPocoUnitOfWork()
         {
-            _db = new Database("DbName");
+            _db = new Database(MvcDemo.Resources.MvcDemoResources.ConnectionStringName);
             _petaTransaction = new Transaction(_db);
         }
 

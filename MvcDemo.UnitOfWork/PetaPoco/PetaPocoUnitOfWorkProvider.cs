@@ -1,4 +1,5 @@
-﻿namespace MvcDemo.Repository.UOW.PetaPoco
+﻿
+namespace MvcDemo.UnitOfWork.PetaPoco
 {
     public class PetaPocoUnitOfWorkProvider : IUnitOfWorkProvider
     {

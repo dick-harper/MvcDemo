@@ -2,9 +2,9 @@
 
 namespace MvcDemo.Service
 {
-    public interface IEntityService<T>  : IService
-        where T : BaseEntity
+    public interface IEntityService<TEntity>  : IService
+        where TEntity : IEntity
     {
-        T Save(T entity);
+        void Add(TEntity entity);
     }
 }

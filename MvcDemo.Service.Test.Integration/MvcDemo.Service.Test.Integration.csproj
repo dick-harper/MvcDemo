@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MvcDemo.Service.Test.Integration</RootNamespace>
     <AssemblyName>MvcDemo.Service.Test.Integration</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -48,26 +49,26 @@
     <Compile Include="UserServiceIntegrationTest.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\MvcDemo.Domain\MvcDemo.Domain.csproj">
-      <Project>{E7530137-EFAD-48F0-9947-EDB0613D4489}</Project>
+      <Project>{e7530137-efad-48f0-9947-edb0613d4489}</Project>
       <Name>MvcDemo.Domain</Name>
     </ProjectReference>
     <ProjectReference Include="..\MvcDemo.Repository\MvcDemo.Repository.csproj">
-      <Project>{C5B184A4-3ED7-40B4-935D-34A8BBCA3377}</Project>
+      <Project>{c5b184a4-3ed7-40b4-935d-34a8bbca3377}</Project>
       <Name>MvcDemo.Repository</Name>
     </ProjectReference>
     <ProjectReference Include="..\MvcDemo.Service\MvcDemo.Service.csproj">
-      <Project>{9E52DDFF-C2E5-4799-BF84-348AC7726B91}</Project>
+      <Project>{9e52ddff-c2e5-4799-bf84-348ac7726b91}</Project>
       <Name>MvcDemo.Service</Name>
     </ProjectReference>
     <ProjectReference Include="..\MvcDemo.UnitOfWork\MvcDemo.UnitOfWork.csproj">
-      <Project>{9F4EF9D5-E95D-4498-949B-36ACC772ACC0}</Project>
+      <Project>{9f4ef9d5-e95d-4498-949b-36acc772acc0}</Project>
       <Name>MvcDemo.UnitOfWork</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

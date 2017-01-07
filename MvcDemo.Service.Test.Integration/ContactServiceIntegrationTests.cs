@@ -24,7 +24,7 @@ namespace MvcDemo.Service.Test.Integration
 
                 var contactService = new ContactService(uow, contactRepository);
 
-                var contact = new Contact
+                var contact = new MvcDemo.Domain.Contact
                 {
                     Created = DateTime.Now,
                     DateOfBirth = _dob,

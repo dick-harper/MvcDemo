@@ -23,7 +23,7 @@ namespace MvcDemo.Service.Test.Unit
             userService.Add(It.IsAny<User>());
 
             // Assert
-            mockRepository.VerifyAll();
+            mockRepository.VerifyAll();            
         }
     }
 }
